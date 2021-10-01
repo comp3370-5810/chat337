@@ -1,4 +1,4 @@
-#Chat337: An App in the Cloud
+# Chat337: An App in the Cloud
 
 Chat337 is a basic chat application that is based on Cloud technology,
 developed by Stefan Marr (git@stefan-marr.de).  It is an example for the
