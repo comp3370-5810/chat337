@@ -5,11 +5,11 @@ describe('Chat337 Server Basics', function() {
   let chat;
 
   before(function() {
-    const smarr = new User("smarr", "Stefan Marr", "Stefan-Marr.jpg");
+    const dcp = new User("dcp", "David Castro-Perez", "DavidCastroPerez.jpg");
     const queen = new User("queen", "The Queen", "Queen-Elizabeth-II.jpg");
     const chancellor = new User("chancellor", "The Chancellor", "Angela-Merkel.jpg");
 
-    chat = new Chat337([smarr, queen, chancellor]);
+    chat = new Chat337([dcp, queen, chancellor]);
   })
 
   describe('Conversation Id need to be unique, order, ...', function () {
@@ -42,12 +42,12 @@ describe('Chat337 Server Basics', function() {
 
   describe('Message Sending', function() {
     it("Sent messages should be in a conversation", function() {
-      let data = chat.allMessages('smarr', 'queen');
+      let data = chat.allMessages('dcp', 'queen');
 
       expect(data.messages).lengthOf(0);
-      chat.sendMessage('smarr', 'queen', 'test message');
+      chat.sendMessage('dcp', 'queen', 'test message');
 
-      data = chat.allMessages('smarr', 'queen');
+      data = chat.allMessages('dcp', 'queen');
       expect(data.messages).lengthOf(1);
     });
   });

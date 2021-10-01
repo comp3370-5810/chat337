@@ -1,22 +1,22 @@
 export function initSystem() {
-  const smarr = new User("smarr", "Stefan Marr", "Stefan-Marr.jpg");
+  const dcp = new User("dcp", "David Castro-Perez", "DavidCastroPerez.jpg");
   const queen = new User("queen", "The Queen", "Queen-Elizabeth-II.jpg");
   const chancellor = new User("chancellor", "The Chancellor", "Angela-Merkel.jpg");
 
   const chat = new Chat337([
-    smarr,
+    dcp,
     queen,
     chancellor
   ]);
 
-  chat.sendMessage("queen", "smarr", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
-  chat.sendMessage("chancellor", "smarr", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
+  chat.sendMessage("queen", "dcp", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
+  chat.sendMessage("chancellor", "dcp", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
 
-  chat.sendMessage("smarr", "queen", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
+  chat.sendMessage("dcp", "queen", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
   chat.sendMessage("chancellor", "queen", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
 
   chat.sendMessage("queen", "chancellor", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
-  chat.sendMessage("smarr", "chancellor", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
+  chat.sendMessage("dcp", "chancellor", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.");
 
   return chat;
 }
