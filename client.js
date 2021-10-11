@@ -162,7 +162,8 @@ class Chat337Client {
 
   async requestDetailsForUrl(url) {
     const response = await fetch(
-      "https://29c22c97.eu-gb.apiconnect.appdomain.cloud/chat337/get-meta",
+ //     "https://29c22c97.eu-gb.apiconnect.appdomain.cloud/chat337/get-meta",
+      "https://3d520d11.eu-gb.apigw.appdomain.cloud/link-preview-api/get-meta",
       {
         method: 'POST',
         headers: {
