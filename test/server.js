@@ -7,9 +7,9 @@ describe('Chat337 Server Basics', function() {
   before(function() {
     const dcp = new User("dcp", "David Castro-Perez", "DavidCastroPerez.jpg");
     const king = new User("king", "The King", "King-Charles-III.jpg");
-    const spanish_pm = new User("spanish_pm", "Spain's Prime Minister", "Pedro-Sanchez.jpg");
+    const spanishpm = new User("spanishpm", "Spain's Prime Minister", "Pedro-Sanchez.jpg");
 
-    chat = new Chat337([dcp, king , spanish_pm]);
+    chat = new Chat337([dcp, king , spanishpm]);
   })
 
   describe('Conversation Id need to be unique, order, ...', function () {
